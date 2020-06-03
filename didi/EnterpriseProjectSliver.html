@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>刘亚飞</title>
+    <!--用来加载外部资源用的标签-->
+    <!--相对路径    绝对路径-->
+    <link rel="short icon" href="Resource/icon.png">
+    <!--引入css文件-->
+    <link rel="stylesheet" href="ExternalStyle.css">
+
+    <style>
+        section{
+            /*成行的标签：display:table; width:一个需求的值*/
+            display: table;
+            width: 100%;
+            height: 40px;
+            background: rgb(244, 244, 246);
+            /*查找到元素的位置后，设为固定*/
+            left: 0;
+            top: 44px;
+            position: fixed;
+        }
+        section a{
+            display: table-cell;
+            width: 33.3%;
+            text-decoration: none;
+            text-align: center;          /*水平居中*/
+            vertival-align:middle;      /*垂直方向上居中*/
+        }
+        .EP_div1 img{
+            /*由于图片上方的元素设为fixed固定，导致页面将上方元素所占的位置覆盖下方，因此需要下方的元素多出上面元素的高度才能显示完整。*/
+            padding-top: 44px;
+            width: 100%;
+        }
+        .EP_div2{
+            background: white;   /*背景为白色*/
+            text-align: center; /*设置该div中的文本居中对齐*/
+        }
+        .EP_span{
+            font-size: 15px;
+        }
+        .EP_img{
+            width: 100%;
+        }
+        .EP_div3{
+            text-align: center;
+        }
+        .EP_p1{
+            font-size: 10px;
+            color: gray;
+        }
+        .EP_inner_div{
+            text-align: left;
+            font-size: 10px;
+            color: gray;
+            line-height: 2em;  /*设置首行缩进*/
+            margin-left: 25px;
+        }
+        .EP_div4{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!--第一部分 页面的头部-->
+<header>
+    <span>创业项目</span>
+</header>
+
+<!--第二部分 页面顶部的选择链接-->
+<section>
+    <a href="BussinessProject.html"><span >钻石创业者</span></a>
+    <a href="EnterpriseProjectGold.html"><span>金牌创业者</span></a>
+    <a style="background: white"><span style="color: rgb(63, 149, 211);">银牌创业者</span></a>
+</section>
+
+<!--第三部分 页面顶部图像-->
+<div class="EP_div1">
+    <img src="Resource/banner2.png">
+</div>
+
+<!--第四部分 页面详情1-->
+<div class="EP_div2">
+    <span class="EP_span" >服务内容</span>
+    <img class="EP_img" src="Resource/10w_1.png">
+    <p class="EP_p1">提供以上两个学院的技术支持、咨询服务、课件学习等内容</p>
+</div>
+
+<!--第五部分 页面详情2-->
+<div class="EP_div3">
+    <span class="EP_span">创业者享受的回报收益</span>
+    <img class="EP_img" src="Resource/10w_2.png">
+</div>
+
+<footer>
+    <a href="Dyige.html"> <img src="Resource/nav10.png" alt="">  <span >小滴服务</span></a>
+    <a href=""> <img src="Resource/nav21.png" alt="">  <span style="color: red;">企业项目</span></a>
+    <a href="ServiceProcess.html"> <img src="Resource/nav30.png" alt="">  <span>服务流程</span></a>
+    <a href="Platformmien.html"> <img src="Resource/nav40.png" alt="">  <span>平台风采</span></a>
+    <a href="MyDroplet.html"> <img src="Resource/nav50.png" alt="">  <span>我的小滴</span></a>
+</footer>
+</body>
+</html>
